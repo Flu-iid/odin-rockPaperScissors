@@ -1,0 +1,127 @@
+* {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #E7F6F2;
+}
+
+header {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #2C3333;
+}
+
+main {
+  z-index: 0;
+  text-shadow: 1px 1px 15px #2C3333;
+}
+main header {
+  padding: 20px 0;
+}
+main #start {
+  margin: 100px 300px;
+}
+main #start h3 {
+  font-size: 32px;
+}
+main #start form {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+section {
+  margin: 50px;
+}
+
+#game,
+#result {
+  display: none;
+}
+
+.box-shadow, #result-content #result-computer, #result-content #result-player, #result-content #result-rounds, #game-content button {
+  box-shadow: 1px 1px 15px 1px #2C3333;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 15px #2C3333;
+}
+
+#game-content {
+  display: flex;
+  justify-content: center;
+}
+#game-content button {
+  margin-left: 50px;
+  border-radius: 25%;
+  background-color: #A5C9CA;
+  color: #2C3333;
+  border: 1px solid #2C3333;
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+}
+#game-content button:hover {
+  background-color: #E7F6F2;
+}
+#game-content button:active {
+  background-color: #2C3333;
+}
+
+#result-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+}
+#result-content #result-rounds {
+  grid-row: 1;
+  grid-column: 2;
+  background-color: #A5C9CA;
+  color: #2C3333;
+  border-radius: 20px;
+}
+#result-content #result-player {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: #395B64;
+  color: #E7F6F2;
+  border-radius: 20px;
+}
+#result-content #result-computer {
+  grid-row: 2;
+  grid-column: 3;
+  background-color: #395B64;
+  color: #E7F6F2;
+  border-radius: 20px;
+}
+#result-content #player-show {
+  grid-row: 1;
+  grid-column: 1;
+  padding-top: 10%;
+}
+#result-content #computer-show {
+  grid-row: 1;
+  grid-column: 3;
+  padding-top: 10%;
+}
+
+footer {
+  text-align: center;
+  color: #A5C9CA;
+  background-color: #2C3333;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+/*# sourceMappingURL=style.css.map */

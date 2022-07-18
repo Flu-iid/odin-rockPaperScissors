@@ -1,0 +1,156 @@
+$color1: #2C3333;
+$color2: #395B64;
+$color3: #A5C9CA;
+$color4: #E7F6F2;
+
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: $color4;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: $color1;
+}
+
+main{
+    z-index: 0;
+    text-shadow: 1px 1px 15px $color1;
+
+    header {
+        padding:20px 0;
+    }
+
+    #start {
+        margin: 100px 300px;
+
+        h3 {
+            font-size: 32px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+section {
+    margin: 50px;
+}
+
+#game,
+#result{
+    display: none;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 15px 1px $color1;
+}
+
+.text-shadow{
+    text-shadow: 1px 1px 15px $color1;
+}
+
+#game-content{
+    display: flex;
+    justify-content: center;
+
+
+    button {
+        margin-left: 50px;
+        border-radius: 25%;
+        background-color: $color3;
+        color: $color1;
+        border: 1px solid $color1;
+        padding: 5px;
+        height: 100px;
+        width: 100px;
+        @extend .box-shadow;
+
+        &:hover {
+            background-color: $color4;
+        }
+        &:active {
+            background-color: $color1;
+        }
+    }
+}
+
+#result-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+
+
+    #result-rounds{
+        grid-row: 1;
+        grid-column: 2;
+        background-color: $color3;
+        color: $color1;
+        border-radius: 20px;
+        @extend .box-shadow
+    }
+
+    #result-player{
+        grid-row: 2;
+        grid-column: 1;
+        background-color: $color2;
+        color: $color4;
+        border-radius: 20px;
+        @extend .box-shadow
+    }
+
+    #result-computer{
+        grid-row: 2;
+        grid-column: 3;
+        background-color: $color2;
+        color: $color4;
+        border-radius: 20px;
+        @extend .box-shadow
+    }
+
+    #player-show {
+        grid-row: 1;
+        grid-column: 1;
+        padding-top: 10%;
+    }
+
+    #computer-show {
+        grid-row: 1;
+        grid-column: 3;
+        padding-top: 10%;
+    }
+
+}
+
+
+
+
+footer {
+    text-align: center;
+    color: #A5C9CA;
+    background-color: $color1;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+@media screen and (min-width:500px) {
+    
+}
+

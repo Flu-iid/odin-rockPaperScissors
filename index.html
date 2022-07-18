@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/css/normalize.css" />
+        <link rel="stylesheet" href="./styles/css/style.css" />
+    </head>
+    <body>
+        <main>
+
+        <header>Rock-Paper-Scissors</header>
+        <section id="start">
+            <h3>How many rounds</h3>
+            <form onsubmit="return false">
+                <input type="number" id="setInput" autofocus/>
+                <button type="submit" onclick="countInput()">Add</button>
+            </form>
+        </section>
+        <section id="game">
+            <div id="game-content">
+                <button id="rock" onclick="playerClick(0)">
+                    <img src="./img/rock_39413.png" alt="Rock" />
+                </button>
+                <button id="paper" onclick="playerClick(1)">
+                    <img src="./img/paper_hand_icon_194949.png" alt="Paper" />
+                </button>
+                <button id="scissor" onclick="playerClick(2)">
+                    <img src="./img/hand_peace_icon_199116.png" alt="Scissor" />
+                </button>
+                <button id="luck" onclick="playerClick(3)">Feeling Lucky!</button>
+            </div>
+        </section>
+        <section id="result">
+            <div id="result-content">
+                <div id="result-rounds">
+                    <p>Rounds</p>
+                    <p id="setNumber">0</p>
+                </div>
+                <div id="result-player">
+                    <p>Player</p>
+                    <p id="player-result">0</p>
+                </div>
+                <div id="result-computer">
+                    <p>Computer</p>
+                    <p id="computer-result">0</p>
+                </div>
+                <div id="player-show">-</div>
+                <div id="computer-show">-</div>
+            </div>
+        </section>
+        <footer>&copy;Flu-iid</footer>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
